@@ -1,0 +1,78 @@
+Python 3.11.0
+VS Code [set on Python 3.11.0]
+pip install -r requirements.txt [To install all libraries]
+
+------------------------------------------------
+Libraries
+------------------------------------------------
+tensorflow
+pillow
+scikit-learn
+opencv-python
+imutils
+numpy
+matplotlib
+
+
+------------------------------------------------
+Model Training Preferences
+------------------------------------------------
+
+1. Data Augmentation:
+If the data augmentation folder exists, the model will be trained using the augmented data.
+
+2. Data Preprocessing:
+If no data augmentation folder exists but a data preprocessing folder is present, the model will be trained using the preprocessed data.
+
+3. Default Dataset:
+If neither data augmentation nor preprocessing folders exist, the model will be trained using the dataset in the main directory (Yes/No folders).
+
+v------------------------------------------------
+Post-Model Training
+After model training:
+------------------------------------------------
+
+1. Two Critical Folders:
+Two essential folders are created: 'Model' and 'Model Evaluation'.
+
+2. Model Evaluation:
+The 'Model Evaluation' folder contains a crucial CSV file evaluating model performance. Do not delete this file.
+
+3. Model Directory:
+The 'Model' directory is vital for predictions. Do not delete it.
+
+Deletion Guidelines
+
+- Augmented data and preprocessing directories can be deleted after model training.
+- Do not delete the 'model' and 'model_evaluation' folders, as they are essential for predictions.
+
+
+------------------------------------------------
+Model Performance Optimization
+------------------------------------------------
+Key Factors Influencing Accuracy, Recall, and F1 Score:
+1. Data Preprocessing Techniques:
+    - Noise Reduction
+    - Skull Stripping
+2. Data Augmentation Techniques:
+    1. Rotation
+    2. Scaling
+    3. Noise Injection
+
+Impact on Model Performance:
+- Data preprocessing techniques significantly affect model accuracy, recall, and F1 score.
+- Data augmentation strategies enhance model robustness and generalizability.
+
+Data Preprocessing Techniques:
+- Noise Reduction: Improves data quality by removing unwanted signals.
+- Skull Stripping: Enhances image contrast and reduces unnecessary features.
+
+Data Augmentation Techniques:
+- Rotation: Increases diversity by simulating various orientations.
+- Scaling: Improves robustness against size variations.
+- Noise Injection: Enhances model resilience to noisy data.
+
+Optimization Strategy:
+1. Experiment with different preprocessing and augmentation combinations.
+2. Evaluate model performance using cross-validation.
+3. Fine-tune techniques to achieve optimal accuracy, recall, and F1 score.
